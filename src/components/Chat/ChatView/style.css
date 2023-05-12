@@ -1,0 +1,8 @@
+@import url('../../../styles/global.css');
+.no-scrollbar {
+  background-color: var(--OffWhite);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

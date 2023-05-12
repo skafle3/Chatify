@@ -1,0 +1,8 @@
+@import url('../../styles/global.css');
+.active-button {
+  background-color: var(--borderhover);
+}
+
+.not-active-button {
+  background-color: transparent;
+}

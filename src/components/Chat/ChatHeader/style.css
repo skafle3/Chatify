@@ -1,0 +1,14 @@
+@import url('./style.css');
+
+.mobile__link {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile__link {
+    display: flex;
+    font-size: 1.6rem;
+    color: var(--primary-blue);
+    margin-right: 20px;
+  }
+}

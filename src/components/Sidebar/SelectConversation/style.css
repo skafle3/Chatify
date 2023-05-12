@@ -1,0 +1,25 @@
+@import url('../../../styles/global.css');
+
+.not-active {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.not-active:hover {
+  background-color: #f0f2f5;
+}
+
+.active {
+  text-decoration: none;
+  background-color: #eceef2;
+}
+
+.active-border {
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at 20% 107%, white 0%, white 60%);
+}
+
+.not-active-border {
+  background-image: linear-gradient(#e2e8ef, #e2e8ef),
+    radial-gradient(circle at 20% 107%, #e2e8ef 0%, #e2e8ef 60%);
+}

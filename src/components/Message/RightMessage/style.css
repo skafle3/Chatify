@@ -1,0 +1,188 @@
+@import url('../../../styles/global.css');
+
+#rightMessage {
+  gap: 8px;
+  display: flex;
+  margin: 35px 0;
+  position: relative;
+  align-items: center;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+
+#rightReply {
+  gap: 8px;
+  display: flex;
+  position: relative;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: -40px;
+  flex-direction: row-reverse;
+}
+
+#rightReply > div {
+  padding: 10px;
+  color: --black;
+  font-size: 1rem;
+  max-width: 600px;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #e4e4e4;
+  background-color: #eaeaea;
+  border-bottom-right-radius: 0;
+}
+
+#rightMessage:hover #rightMessage__actions {
+  opacity: 1;
+}
+
+#rightMessage .rightMessage__text--link {
+  color: var(--white);
+  padding: 10px;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-right: 30px;
+  position: relative;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 1px 3px #0000002a;
+  background-color: var(--primary-blue);
+}
+
+#rightMessage .rightMessage__text--link a {
+  color: var(--white);
+}
+
+/* rightMessage Actions Button */
+#rightMessage #rightMessage__actions {
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+#rightMessage #rightMessage__actions button {
+  border: none;
+  margin: 0 5px;
+  color: #6b7280;
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  background-color: transparent;
+}
+
+#rightMessage #rightMessage__actions button:hover {
+  color: var(--primary-blue);
+}
+
+#rightMessage #rightMessage__actions button:first-child {
+  font-size: 1.5rem;
+}
+
+/* Remove Image */
+#rightMessage .rightMessage__removed {
+  padding: 10px;
+  color: var(--darkgrey);
+  margin-right: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--darkgrey);
+  border-bottom-right-radius: 0;
+}
+
+/* File */
+#rightMessage .rightMessage__file {
+  width: 300px;
+  display: flex;
+  margin-right: 30px;
+  padding: 10px 10px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid #cacaca;
+  background-color: #eaeaea;
+  box-shadow: 0 1px 3px #0000001a;
+}
+
+#rightMessage .rightMessage__file a {
+  display: flex;
+  justify-content: center;
+}
+
+#rightMessage .rightMessage__file .rightMessage__file--info {
+  padding-right: 20px;
+}
+
+#rightMessage .rightMessage__file .rightMessage__file--info p {
+  width: 150px;
+  font-size: 1rem;
+  overflow: hidden;
+  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#rightMessage .rightMessage__file .rightMessage__file--info p:last-child {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Image */
+#rightMessage .rightMessage__image {
+  width: 200px;
+  margin-right: 30px;
+  box-shadow: 0 1px 3px #0000002a;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  #rightMessage span,
+  #rightMessage a {
+    width: 300px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 548px) {
+  #rightMessage .rightMessage__text--link {
+    max-width: 300px;
+  }
+
+  #rightMessage span,
+  #rightMessage a {
+    font-size: 0.9rem;
+  }
+
+  #rightMessage .rightMessage__removed {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  #rightMessage .rightMessage__image {
+    width: 150px;
+    margin-left: 50px;
+  }
+
+  /* File */
+  #rightMessage .rightMessage__file {
+    width: 250px;
+  }
+
+  #rightMessage .rightMessage__file .rightMessage__file--info p {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  #rightMessage .rightMessage__file .rightMessage__file--info p:last-child {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #rightMessage .rightMessage__text--link {
+    max-width: 200px;
+  }
+
+  #rightMessage span,
+  #rightMessage a {
+    width: 200px;
+  }
+}
